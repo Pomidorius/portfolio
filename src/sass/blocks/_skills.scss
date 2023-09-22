@@ -1,0 +1,109 @@
+.skills {
+    padding-top: 120px;
+    &__title {
+        text-align: center;
+        position: relative;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 270px);
+        justify-content: space-around;
+        gap: 13px;
+        grid-template-rows: 270px;
+    }
+    &__item {
+        position: relative;
+        padding: 25px 30px 25px 30px;
+        border: 1px solid #000000;
+        overflow: hidden;
+        height: 270px;
+        img {
+            margin-bottom: 20px;
+        }
+        &-title {
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        &-descr {
+            width: 211px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    &__flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__key {
+        width: 100px;
+        margin: 10px auto 0 auto;
+        cursor: pointer;
+        &:hover {
+            color: red;
+        }
+    }
+    &_hidden {
+        position: absolute;
+        left: -100%;
+    }
+    &__closer {
+        width: 13px;
+        margin: 0 auto;
+        cursor: pointer;
+        &:hover {
+            color: green;
+        }
+    }
+}
+.skills-state {
+    padding-top: 120px;
+    .title {
+        position: relative;
+        @include before_circle;
+        &:before {
+            top: -40%;
+            left: -3%;
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 350px);
+        justify-content: space-around;
+        grid-template-rows: repeat(2, 70px);
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+    &__item {
+        position: relative;
+    }
+    &__percents {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &__scale {
+        margin-top: 35px;
+        height: 14px;
+        background: #E8E4DE;
+        border-radius: 4px;
+        span {
+            display: block;
+            height: inherit;
+            background: $main;
+            border-radius: inherit;
+        }
+    }
+
+}

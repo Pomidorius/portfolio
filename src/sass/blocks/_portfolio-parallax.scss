@@ -1,0 +1,71 @@
+.portfolio {
+    &__wrapper {
+        font-size: calc(var(--index) * 1.5);
+        display: flex;
+        flex-direction: column;
+    }
+    &-item {
+        cursor: none;
+        color: var(--black);
+        text-decoration: none;
+        display: block;
+        padding: calc(var(--index) * 2);
+        border-bottom: 1px solid rgb(0 0 0 / .3);
+        counter-increment: my-counter;
+        &:first-child {
+            border-top: 2px solid var(--black);
+        }
+        &:before {
+            content: '(' counter(my-counter) ')';
+            position: absolute;
+            font-size: calc(var(--index) * .7);
+            margin-left: calc(var(--index) * -1.5);
+            margin-top: calc(var(--index) * .7);
+            letter-spacing: .5px;
+            transition: transform var(--transition);
+            transition-delay: .05s;
+            will-change: transform;
+        }
+        &:hover {
+            text-decoration: none;
+            color: var(--black);
+            .portfolio-item__header,
+            &:before {
+                transform: translate3d(calc(var(--index) * -3), 0, 0);
+                will-change: transform;
+            }
+            .portfolio-cursor {
+                height: var(--height);
+            }
+        }
+        &__header {
+            transition: transform var(--transition);
+            will-change: transform;
+        }
+    }
+    &-cursor {
+        --width: calc(var(--index) * 12);
+        --height: calc(var(--index) * 7);
+        position: fixed;
+        width: var(--width);
+        height: 0;
+        top: calc(var(--height) * -.5);
+        left: calc(var(--width) * -.5);
+        overflow: hidden;
+        transform: translate3d(var(--move-x), var(--move-y), 0);
+        transition: transform var(--transition-cursor), height 1s ease;
+        will-change: transform;
+        z-index: -1;
+        &__img {
+            position: relative;
+            width: calc(var(--width) * 2);
+            height: calc(var(--height) * 2);
+            top: calc(var(--height) * -.5);
+            left: calc(var(--width) * -.5);
+            background-size: cover;
+            background-position: center;
+            // transform: translate3d(calc(var(--move-x) / -100), calc(var(--move-y) / -100), 0);
+            transition: transform var(--transition-cursor);
+        }
+    }
+}
