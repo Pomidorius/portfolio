@@ -1,18 +1,18 @@
 window.addEventListener('DOMContentLoaded', function() {
-    window.addEventListener('scroll', (e) => {
-        var scrollHeight = window.scrollY;
-        var elements = document.querySelectorAll('.promo__layer');
+    // window.addEventListener('scroll', (e) => {
+    //     var scrollHeight = window.scrollY;
+    //     var elements = document.querySelectorAll('.promo__layer');
 
-        if (scrollHeight >= 5 * window.innerHeight) { 
-            elements.forEach(function(element) {
-                element.style.position = 'static'; 
-            });
-        } else {
-            elements.forEach(function(element) {
-                element.style.position = 'fixed';
-            });
-        }
-    })
+    //     if (scrollHeight >= 5 * window.innerHeight) { 
+    //         elements.forEach(function(element) {
+    //             element.style.position = 'static'; 
+    //         });
+    //     } else {
+    //         elements.forEach(function(element) {
+    //             element.style.position = 'fixed';
+    //         });
+    //     }
+    // })
 
     const sliderMain = new Swiper(".portfolio__slider", {
         freeMode: true,
