@@ -28,9 +28,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 spaceBetween: 60
             }
         },
-        mousewheel: {
-            enabled: true
-        }
+        mousewheel: true
     });
 
     const sliderBG = new Swiper(".portfolio__slider_bg", {
