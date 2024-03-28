@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="promo" class="promo">
+        <div class="promo__layer" style="background-image: url('img/bg/layer-4.jpg'); position: fixed;"></div>
+        <div class="promo__layer df-c" style="background-image: url('img/bg/layer-3.png'); position: fixed;">
+            <div class="promo-layer__content_start">
+                <h1>
+                    Портфолио
+                </h1>
+            </div>
+        </div>
+        <div class="promo__layer" style="background-image: url('img/bg/layer-2.png'); position: fixed;"></div>
+        <div class="promo__layer" style="background-image: url('img/bg/layer-1.png'); position: fixed;"></div>
+        <div class="promo__layer promo-layer__content_end df-c">
+            <div class="promo-layer__name">
+                Меня зовут <h3>Никита Крестинков</h3>
+            </div>
+            <div class="promo-layer__descr">
+                Я web-разработчик
+            </div>
+            <div class="promo-layer__wrapper">
+                <div class="promo-layer__btn df-c">
+                    <a href="#portfolio">Портфолио</a>
+                </div>
+                <div class="promo-layer__btn df-c">
+                    <a href="#about">Обо мне</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio d-n">
+        <div class="nav__menu portfolio__nav">
+            <a id="promoBtn" href="#promo">Главная</a>
+            <a href="#portfolio">Портфолио</a>
+        </div>
+        <div class="portfolio__description">
+            <div class="portfolio-description__logo">
+                Портфолио
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab delectus amet, placeat debitis pariatur quae adipisci consequuntur, quidem omnis quaerat enim natus consequatur quas. Vitae aut eum iusto debitis fugiat!</p>
+        </div>
+        <div class="swiper slider portfolio__slider">
+            <div class="swiper-wrapper portfolio-slider__wrapper">
+               <div class="swiper-slide portfolio-slider__item">
+                <a href="#" class="portfolio-slider__img portfolio-slider__img1" data-swiper-parallax="40%" style="background-image: url('img/bg/puls2.jpg');"></a>
+               </div>
+               <div class="swiper-slide portfolio-slider__item">
+                <a href="#" class="portfolio-slider__img" data-swiper-parallax="30%" style="background-image: url('img/bg/ruv.webp')"></a>
+               </div>
+               <div class="swiper-slide portfolio-slider__item">
+                <a href="#" class="portfolio-slider__img" data-swiper-parallax="20%" style="background-image: url('img/bg/glopt2.jpg')"></a>
+               </div>
+               <div class="swiper-slide portfolio-slider__item">
+                <a href="#" class="portfolio-slider__img" data-swiper-parallax="30%" style="background-image: url('img/bg/fairy_forest.png')"></a>
+               </div>
+               <div class="swiper-slide portfolio-slider__item">
+                <a href="#" class="portfolio-slider__img portfolio-slider__img5" data-swiper-parallax="20%" style="background-image: url('img/bg/rainy_forest.png')"></a>
+               </div>
+            </div>
+        </div>
+        <div class="swiper slider portfolio__slider_bg">
+            <div class="swiper-wrapper portfolio-slider__wrapper">
+               <div class="swiper-slide portfolio-slider__item">
+                <div class="portfolio-slider__img" data-swiper-parallax="20%" style="background-image: url('img/bg/puls2.jpg');"></div>
+               </div>
+               <div class="swiper-slide portfolio-slider__item">
+                <div class="portfolio-slider__img" data-swiper-parallax="30%" style="background-image: url('img/bg/ruv.webp')"></div>
+               </div>
+               <div class="swiper-slide portfolio-slider__item">
+                <div class="portfolio-slider__img" data-swiper-parallax="20%" style="background-image: url('img/bg/glopt2.jpg')"></div>
+               </div>
+               <div class="swiper-slide portfolio-slider__item">
+                <div class="portfolio-slider__img" data-swiper-parallax="30%" style="background-image: url('img/bg/fairy_forest.png')"></div>
+               </div>
+               <div class="swiper-slide portfolio-slider__item">
+                <div class="portfolio-slider__img" data-swiper-parallax="20%" style="background-image: url('img/bg/rainy_forest.png')"></div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
