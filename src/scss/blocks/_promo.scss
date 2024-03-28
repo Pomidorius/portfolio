@@ -1,0 +1,134 @@
+.promo {
+    overflow-x: hidden;
+    height: 500vh;
+    &__layer {
+        height: 100vh;
+        width: 100vw;
+        background-position: center;
+        background-size: cover;
+        animation-timeline: scroll();
+        animation-timing-function: linear;
+        animation-fill-mode: both;
+        animation-range: 0 500vh;
+        &:nth-child(1) {
+            animation-name: promo-layer1-scroll;
+        }
+        @keyframes promo-layer1-scroll {
+            to {
+                scale: 1.25
+            }
+        }
+        &:nth-child(2) {
+            animation-name: promo-layer2-scroll;
+        }
+        @keyframes promo-layer2-scroll {
+            to {
+                scale: 1.275
+            }
+        }
+        &:nth-child(3) {
+            animation-name: promo-layer3-scroll;
+        }
+        @keyframes promo-layer3-scroll {
+            to {
+                scale: 1.5
+            }
+        }
+        &:nth-child(4) {
+            animation-name: promo-layer4-scroll;
+        }
+        @keyframes promo-layer4-scroll {
+            to {
+                scale: 1.9
+            }
+        }
+        &:nth-child(5) {
+            font-family: 'Roboto Slab';
+            opacity: 0;
+            filter: blur(25px);
+            flex-direction: column;
+            animation-name: promo-end-scroll;
+            animation-timeline: scroll();
+            animation-timing-function: linear;
+            animation-fill-mode: both;
+            animation-range: 200vh 400vh;
+            &:before {
+                content: '';
+                background-color: #01122B;
+                inset: 0;
+                position: absolute;
+                z-index: -1;
+            }
+            h3 {
+                font-size: calc(var(--index) * 1.75);
+            }
+        }
+        @keyframes promo-end-scroll {
+            to {
+                opacity: 1;
+                filter: none;
+            }
+        }
+    }
+    &-layer {
+        &__content {
+            &_start, &_end {
+                color: white;
+                padding: 5vh 5vw;
+            }
+            &_start {
+                mix-blend-mode: multiply;
+                text-transform: uppercase;
+                animation-timeline: scroll();
+                animation-timing-function: linear;
+                animation-fill-mode: both;
+                animation-range: 0 200vh;
+                animation-name: promo-header-scroll;
+                h1 {
+                    font-size: calc(var(--index) * 4.3);
+                    font-family: 'Roboto Slab';
+                    font-weight: 800;
+                }
+            }
+            @keyframes promo-header-scroll {
+                to {
+                    opacity: 0;
+                    filter: blur(25px);
+                }
+            }
+        }
+        &__name {
+            font-size: calc(var(--index) * 1.75);
+            display: flex;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+        &__descr {
+            font-size: calc(var(--index) * 1.75);
+            margin-bottom: 20px;
+        }
+        &__wrapper {
+            width: 300px;
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            margin: 20px auto;
+        }
+        &__btn {
+            width: 10vw;
+            height: 8vh;
+            cursor: pointer;
+            box-shadow: inset 0 0 0 0 #01122B;
+            transition: all .8s;
+            background: #162944;
+            a {
+                text-decoration: none;
+                color: #FFF;
+                font-size: calc(var(--index) * 1);
+            }
+            &:hover {
+            box-shadow: inset 200px 0 50px 0 #01122B;
+            }    
+        }
+    }
+}
