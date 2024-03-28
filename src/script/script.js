@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', function() {
             }
         },
         mousewheel: {
-            enabled: false
+            enabled: true
         }
     });
 
