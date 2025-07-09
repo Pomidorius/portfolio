@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Основные мета-теги -->
+    <title>Никита - Веб-разработчик | Портфолио</title>
+    <meta name="description" content="Веб-разработчик с опытом создания современных сайтов на WordPress, HTML/CSS/JS. Специализируюсь на frontend разработке и CMS. Кортен, Молдова.">
+    <meta name="keywords" content="веб-разработчик, frontend, WordPress, HTML, CSS, JavaScript, WooCommerce, Tilda, Webflow, портфолио">
+    <meta name="author" content="Никита">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yoursite.com/">
+    <meta property="og:title" content="Никита - Веб-разработчик | Портфолио">
+    <meta property="og:description" content="Веб-разработчик с опытом создания современных сайтов на WordPress, HTML/CSS/JS. Специализируюсь на frontend разработке и CMS.">
+    <meta property="og:image" content="https://yoursite.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="ru_RU">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yoursite.com/">
+    <meta property="twitter:title" content="Никита - Веб-разработчик | Портфолио">
+    <meta property="twitter:description" content="Веб-разработчик с опытом создания современных сайтов на WordPress, HTML/CSS/JS. Специализируюсь на frontend разработке и CMS.">
+    <meta property="twitter:image" content="https://yoursite.com/og-image.jpg">
+    
+    <!-- Фавиконки -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Стили и шрифты -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Структурированные данные -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Никита",
+      "jobTitle": "Веб-разработчик",
+      "description": "Веб-разработчик с опытом создания современных сайтов на WordPress, HTML/CSS/JS",
+      "url": "https://yoursite.com",
+      "email": "werty345896@gmail.com",
+      "telephone": "+373-798-13-319",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Кортен",
+        "addressCountry": "Молдова"
+      },
+      "sameAs": [
+        "https://github.com/Pomidorius",
+        "https://www.linkedin.com/in/никита-к-1b047027b",
+        "https://t.me/crestincovv"
+      ],
+      "knowsAbout": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "WordPress",
+        "WooCommerce",
+        "React",
+        "Tilda",
+        "Webflow"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Портфолио</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#about" class="nav-link">О себе</a></li>
+                <li><a href="#skills" class="nav-link">Навыки</a></li>
+                <li><a href="#projects" class="nav-link">Проекты</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главная секция -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Привет, я <span class="highlight">Веб-разработчик</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Создаю современные и функциональные веб-приложения
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Мои проекты</a>
+                    <a href="#contact" class="btn btn-secondary">Связаться</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-illustration">
+                    <div class="hero-code-animation">
+                        <div class="code-line line1"><span class="keyword">const</span> <span class="variable">developer</span> = {</div>
+                        <div class="code-line line2">  <span class="property">name</span>: <span class="string">'Веб-разработчик'</span>,</div>
+                        <div class="code-line line3">  <span class="property">skills</span>: [<span class="string">'HTML'</span>, <span class="string">'CSS'</span>, <span class="string">'JS'</span>],</div>
+                        <div class="code-line line4">  <span class="property">passion</span>: <span class="string">'Создавать крутые проекты'</span></div>
+                        <div class="code-line line5">};</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Узнайте больше обо мне</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- О себе -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">О себе</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Я веб-разработчик с опытом создания современных, отзывчивых и функциональных веб-приложений. 
+                        Специализируюсь на frontend разработке с использованием последних технологий.
+                    </p>
+                    <p>
+                        Моя цель - создавать качественные продукты, которые решают реальные задачи пользователей 
+                        и обеспечивают отличный пользовательский опыт.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">лет опыта</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">проектов</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">довольных клиентов</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-photo">
+                        <img src="photo_2025-03-21_22-30-16.jpg" alt="Моё фото" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Навыки -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Навыки</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">CMS и Платформы</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">WordPress</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">WooCommerce</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tilda</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Webflow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Инструменты</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-wordpress"></i>
+                            <span>WordPress</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Photoshop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Проекты -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fab fa-wordpress"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Корпоративный сайт</h3>
+                        <p class="project-description">
+                            Современный корпоративный сайт на WordPress с индивидуальным дизайном и функционалом.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">WordPress</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Демо
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Интернет-магазин</h3>
+                        <p class="project-description">
+                            Полнофункциональный интернет-магазин на WooCommerce с индивидуальным дизайном.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">WooCommerce</span>
+                            <span class="tag">WordPress</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Демо
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="art-landing.png" alt="Арт-лендинг" class="project-screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Арт-лендинг</h3>
+                        <p class="project-description">
+                            Креативная посадочная страница для художника с портфолио и галереей работ.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="http://iamekaas.art/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Демо
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Связаться со мной</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <a href="mailto:werty345896@gmail.com" class="contact-icon-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <div>
+                            <h4>Email</h4>
+                            <p>werty345896@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <a href="tel:+373798133319" class="contact-icon-link">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <div>
+                            <h4>Телефон</h4>
+                            <p>+373 798 13 319</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://www.google.com/maps/search/Кортен,+Молдова" target="_blank" class="contact-icon-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                        <div>
+                            <h4>Местоположение</h4>
+                            <p>Кортен, Молдова</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Ваш email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Сообщение" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Портфолио. Все права защищены.</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Pomidorius" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/никита-к-1b047027b" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://t.me/crestincovv" target="_blank" class="social-link">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

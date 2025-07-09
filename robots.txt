@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yoursite.com/sitemap.xml
+
+# Disallow admin files
+Disallow: /admin/
+Disallow: /*.log$
+Disallow: /temp/
